@@ -15,7 +15,7 @@ export class CustomMap {
   }
 
   addUserMarker(user: User): void {
-    const testUserMarker = new google.maps.Marker({
+    new google.maps.Marker({
       map: this.googleMap,
       position: {
         lat: user.location.lat,
